@@ -3,6 +3,36 @@ UVVM Utility Library - Overview on Versions and Changes
 
 ----------------------------------------------------------------------
 
+v2.4.0
+----------
+Released: 2018-04-09
+- Changed to KEEP_LEADING_0 in check_value() for SLV, signed and unsigned.
+- Added t_info_on_finishing_await_any_completion with VVC name, index and
+  time of competion to t_shared_uvvm_status.
+- Added increment_expected_alerts_and_stop_limit()
+- Made ID_LOG_MSG_CTRL always visible in the transcript window.
+- Added padding of leading zeros to check_values() with SLVs of different
+  lengths.
+
+
+v2.3.1
+----------
+Released: 2017-12-20
+- Added constant C_TB_MSG_ID_DEFAULT for simplified log() procedure.
+- Added simplified log() procedure. Now the log() procedure can be called
+  simply with the logging message. Msg_id will be the default, set in
+  C_TB_MSG_ID_DEFAULT, located in the adaptions_pkg.
+- Increased default for C_MAX_VVC_INSTANCE_NUM from 8 to 20.
+
+v2.3.0
+----------
+Released: 2017-11-16
+- Added switch C_USE_STD_STOP_ON_ALERT_STOP_LIMIT to select how simulation
+  should stop if alert limit is reached.
+- Changed alert to TB_ERROR if set_alert_attention() is called with other
+  t_attention parameter than REGARD or IGNORE.
+- Updated QR version number.
+
 v2.2.0
 ----------
 Released: 2017-10-16

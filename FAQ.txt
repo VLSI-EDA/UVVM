@@ -20,8 +20,8 @@ A: There is a 250 character limit on file paths in the Windows operating
 -----------------------------------------------------------
 Q: Why do I get an error message saying 'UVVM will not work without intitalize_uvvm instantiated as a concurrent procedure in the test harness' 
 
-A: You need to instantiate ‘uvvm_vvc_framework.ti_uvvm_engine’ in your testbench, and you should include wait_for_uvvm_init() as your first statement in your test case sequencer.
-   See ‘bitvis_uart/tb/uart_vvc_th|tb.vhd’ for examples.
+A: You need to instantiate "uvvm_vvc_framework.ti_uvvm_engine" in your testbench, and you should include wait_for_uvvm_init() as your first statement in your test case sequencer.
+   See "bitvis_uart/tb/uart_vvc_th|tb.vhd" for examples.
 
 
 -----------------------------------------------------------
@@ -58,5 +58,27 @@ A: If you have a look inside the axilite_bfm_QuickRef.pdf on page two, you will 
                                    wstrb( GC_STR_WIDTH-1 downto 0)),
                                    read_address_channel( araddr(GC_ADDR_WIDTH-1 downto 0)),
                                    read_data_channel( rdata(GC_DATA_WIDTH-1 downto 0)) ) := init_axilite_if_signals(GC_ADDR_WIDTH, GC_DATA_WIDTH);
+
+------------------------------------------------------------------------
+
+
+-----------------------------------------------------------
+-- Simulator Questions
+-----------------------------------------------------------
+
+------------------------------------------------------------------------
+
+Q: Does GHDL support UVVM?
+
+A: Yes. But not all parts of VHDL 2008 are supported.
+   We are waiting for GHDL to implement solutions.
+
+------------------------------------------------------------------------
+
+Q: Does Aldec Riviera Pro support UVVM?
+
+A Yes. But we have seen some issues where the simulator
+  have problems with interface signals as unconstrained
+  records. We are waiting for an Aldec solution.
 
 ------------------------------------------------------------------------

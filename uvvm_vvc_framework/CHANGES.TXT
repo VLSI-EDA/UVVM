@@ -3,6 +3,17 @@ UVVM VVC Framework - Overview on Versions and Changes
 
 ----------------------------------------------------------------------
 
+v2.2.1
+----------
+Released: 2018-04-16
+- Fixed an error in the generated code for vvc_generator.py script.
+- Removed a blank page from the Common_VVC_Methods.pdf
+
+v2.1.1
+----------
+Released: 2017-12-20
+- Added documentation for UVVM FIFO Collection and UVVM Generic Queue.
+
 v2.1.0
 ----------
 Released: 2017-10-16
