@@ -3,6 +3,33 @@ UVVM Utility Library - Overview on Versions and Changes
 
 ----------------------------------------------------------------------
 
+v2.7.0
+----------
+Released: 2018-12-03
+- Updated documentation
+- Check value with std_logic/std_logic_vector now have option, MATCH_STD_INCL_Z,
+  that also includes match of 'Z'.
+
+
+v2.6.0
+----------
+Released: 2018-08-30
+- Updated documentation
+- Compile script changed according to new structure
+- Fixed simulation status in shared_uvvm_status and hierarchical alert messages
+- New package for global signals and shared variables added, global_signals_and_shared_variables_pkg.vhd.
+
+
+v2.5.0
+----------
+Released: 2018-07-02
+- Added message id ID_DATA and ID_CTRL.
+- Added constants ALL_ENABLED_INTSTANCES, C_MAX_QUEUE_INSTANCE_NUM,
+  C_SB_TAG_WIDTH, C_SB_SOURCE_WIDTH, C_SB_SLV_WIDTH.
+- Added types positve_vector and natural_vector.
+- Added types t_identifier_option, t_range_option, t_tag_usage and t_void_bfm_config.
+
+
 v2.4.0
 ----------
 Released: 2018-04-09

@@ -9,6 +9,55 @@ CHANGES.TXT in each module's sub-directory.
 
 ----------------------------------------------------------------------
 
+v2018.12.03
+--------------------
+Released: 2018-12-03
+- Minor changes in documentation of VIPs, UTIL and VVC Framework.
+- Option MATCH_STD_INCL_Z added to check_value() of std_logic/std_logic_vector in UVVM UTIL.
+- Minor bug fix in UART VIP.
+- Minor bug fix in SBI VIP.
+
+
+v2018.10.09
+--------------------
+Released: 2018-10-09
+- Fixed minor bug in bitvis_vip_scoreboard
+
+
+v2018.09.28
+--------------------
+Released: 2018-09-28
+- Fixed bug in compile script in bitvis_irqc
+- Minor changes in documentation of bitvis_uart
+
+
+v2018.08.30
+--------------------
+Released: 2018-08-30
+- New compile script structure
+- Added context file for each VVC
+- Fixed simulation status in shared_uvvm_status and hierarchical alert messages in UVVM UTIL
+- New package for global signals and shared variables added, global_signals_and_shared_variables_pkg.vhd in UVVM UTIL
+- Added support allowing the first clock edge to come at the same time or
+  before chip select is enabled for SPI slave BFM.
+
+
+v2018.07.04
+--------------------
+Released: 2018-07-04
+- Fixed bug in the generic queue package
+
+
+v2018.07.02
+--------------------
+Released: 2018-07-02
+- Added bitvis_vip_scoreboard
+- Added bitvis_vip_clock_generator
+- Added new methods to ti_generic_queue_pkg
+- Fixed bug in receive_only methods in SPI VVC
+- Fixed bug in get_queue_is_full method in ti_data_queue_pkg
+
+
 v2018.04.16
 --------------------
 Released: 2018-04-16

@@ -3,6 +3,30 @@ UVVM VVC Framework - Overview on Versions and Changes
 
 ----------------------------------------------------------------------
 
+v2.3.3
+----------
+Released: 2018-12-03
+- Updated documentation
+
+v2.3.2
+----------
+Released: 2018-08-30
+- Updated documentation
+- Compile script changed according to new structure
+
+v2.3.1
+----------
+Released: 2018-07-04
+- Fixed bug in generic queue package which caused compile error in some simulator versions
+
+v2.3.0
+----------
+Released: 2018-07-02
+- Added add, fetch, insert, delete, find_position, find_entry_num
+  and get_entry_num to ti_generic_queue_pkg.
+- Fixed error in get_queue_is_full in ti_data_queue_pkg
+- Added script to compile UVVM and VIPs
+
 v2.2.1
 ----------
 Released: 2018-04-16
